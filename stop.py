@@ -3,7 +3,7 @@ import os
 import asyncio
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(override=True)  # 環境変数を上書きするために override=True を指定
 TOKEN = os.getenv('DISCORD_TOKEN')
 SERVER_BOOT_CHANNEL_ID = int(os.getenv('SERVER_CHANNEL_ID'))
 
